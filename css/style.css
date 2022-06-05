@@ -1,0 +1,146 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap'); */
+
+@font-face {
+    font-family: 'GeneralSans';
+    src: url('../fonts/GeneralSans-Variable.woff2') format('woff2'),
+        url('../fonts/GeneralSans-Variable.woff') format('woff'),
+        url('../fonts/GeneralSans-Variable.ttf') format('truetype');
+        font-weight: 200 700;
+        font-display: swap;
+        font-style: normal;
+}
+
+:root {
+    --color-bg: #FAFAFB;
+    --color-primary: #0F1D40;
+    --color-body: #49536E;
+    --color-border: #E8E8EA;
+    --color-white: #FFFFFF;
+    --gradient-logo: linear-gradient(104.34deg, #B182FF 5.77%, #8310C9 54.76%, #5315D9 103.76%);
+    --gradient-btn: radial-gradient(232.65% 272.4% at 130.25% 224.03%, #0A0822 0%, #1B1351 10.77%, #4E2BC3 42.71%, #A15EE6 64.52%, #DBA8DB 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+    --gradient-btn-hover: radial-gradient(232.93% 273.25% at -30.54% -121.49%, #0A0822 0%, #1B1351 10.77%, #4E2BC3 42.71%, #A15EE6 64.52%, #DBA8DB 100%)
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                   GENREAL                                  */
+/* -------------------------------------------------------------------------- */
+
+*, *::before, *::after{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'GeneralSans';
+    line-height: 1;
+    font-weight: 500;
+    color: var(--color-body);
+}
+
+/* ---------------------------------- LINK ---------------------------------- */
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* -------------------------------- CONTAINER ------------------------------- */
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   HEADER                                   */
+/* -------------------------------------------------------------------------- */
+
+header {
+    padding: 6.4rem 0;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* ---------------------------------- LOGO ---------------------------------- */
+
+.logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: -0.1rem;
+    background: var(--gradient-logo);
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    /* text-fill-color: transparent; */
+}
+
+/* ------------------------------- SEARCH BAR ------------------------------- */
+
+.search-bar {
+    padding: 1.3rem 2rem;
+    width: 40.8rem;
+    border: 2px solid var(--color-border);
+    display: flex;
+    align-items: center;
+    gap: 1.8rem;
+    border-radius: 1.2rem;
+    -webkit-border-radius: 1.2rem;
+    -moz-border-radius: 1.2rem;
+    -ms-border-radius: 1.2rem;
+    -o-border-radius: 1.2rem;
+}
+
+.search-input, .search-input:focus, .search-input::placeholder {
+    border: none;
+    outline: none;
+    font-size: 1.8rem;
+    width: 100%;
+    color: var(--color-body);
+}
+
+/* ---------------------------- NAVIGATION LINKS ---------------------------- */
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 6.4rem;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.nav-links > li > .nav-link:link, 
+.nav-links > li > .nav-link:visited{
+    color: var(--color-primary);
+}
+
+.btn:link,
+.btn:visited {
+    padding: 2rem 2.4rem;
+    display: inline-block;
+    background-image: var(--gradient-btn);
+    border-radius: 1.5rem;
+    color: var(--color-white) !important;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+}
+
+/* .btn:hover,
+.btn:active {
+}
+ */
