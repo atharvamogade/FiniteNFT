@@ -168,6 +168,9 @@ header {
     font-size: 8rem;
     color: var(--color-primary);
     margin-bottom: 1.6rem;
+    font-weight: 900;
+    line-height: 1.2;
+    letter-spacing: -0.1rem;
 }
 
 .hero-description {
