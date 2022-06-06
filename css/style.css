@@ -9,7 +9,7 @@
         font-weight: 200 700;
         font-display: swap;
         font-style: normal;
-}
+    }
 
 :root {
     --color-bg: #FAFAFB;
@@ -38,10 +38,12 @@ html {
 }
 
 body {
+    height: 100vh;
     font-family: 'GeneralSans';
     line-height: 1;
     font-weight: 500;
     color: var(--color-body);
+    background-color: var(--color-bg);
 }
 
 /* ---------------------------------- LINK ---------------------------------- */
@@ -63,20 +65,21 @@ a {
 /* -------------------------------------------------------------------------- */
 
 header {
-    padding: 6.4rem 0;
+    padding: 3.2rem 0;
 }
 
 .main-nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 6.4rem;
 }
 
 /* ---------------------------------- LOGO ---------------------------------- */
 
 .logo {
     font-size: 2.4rem;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 1.5;
     letter-spacing: -0.1rem;
     background: var(--gradient-logo);
@@ -106,6 +109,7 @@ header {
 .search-input, .search-input:focus, .search-input::placeholder {
     border: none;
     outline: none;
+    background: none;
     font-size: 1.8rem;
     width: 100%;
     color: var(--color-body);
@@ -129,6 +133,9 @@ header {
 
 .btn:link,
 .btn:visited {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.01em;
     padding: 2rem 2.4rem;
     display: inline-block;
     background-image: var(--gradient-btn);
@@ -144,3 +151,69 @@ header {
 .btn:active {
 }
  */
+
+/* -------------------------------------------------------------------------- */
+/*                                SECTION HERO                                */
+/* -------------------------------------------------------------------------- */
+
+.section-hero {
+    display: flex;
+    align-items: center;
+    gap: 5.4rem;
+}
+
+/* -------------------------------- HERO TEXT ------------------------------- */
+
+.heading-primary {
+    font-size: 8rem;
+    color: var(--color-primary);
+    margin-bottom: 1.6rem;
+}
+
+.hero-description {
+    font-size: 2.2rem;
+    line-height: 1.6;
+    margin-bottom: 4rem;
+}
+
+/* -------------------------------- HERO CTA -------------------------------- */
+
+.hero-cta {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.play-video {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #393939;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.play-video:hover,
+.play-video:active {
+    color: var(--color-primary);
+}
+
+/* .play-video-link:link,
+.play-video-link:visited {
+    color: #393939;
+}
+
+.play-video-link:hover,
+.play-video-link:active {
+    color: #5c5c5c;
+} */
+
+/* .hero-img {
+    position: relative;
+    right: -3.2rem;
+} */
