@@ -44,6 +44,7 @@ body {
     font-weight: 500;
     color: var(--color-body);
     background-color: var(--color-bg);
+    overflow: hidden;
 }
 
 /* ---------------------------------- LINK ---------------------------------- */
@@ -58,6 +59,24 @@ a {
 .container {
     max-width: 120rem;
     margin: 0 auto;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                 BACKGROUND                                 */
+/* -------------------------------------------------------------------------- */
+
+.shadow-1 {
+    position: absolute;
+    z-index: -10;
+    top: 79.3rem;
+    left: -15.5rem;
+}
+
+.shadow-2 {
+    position: absolute;
+    z-index: -11;
+    top: 11.5rem;
+    left: 72rem;
 }
 
 /* -------------------------------------------------------------------------- */
